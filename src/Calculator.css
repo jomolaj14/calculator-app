@@ -1,0 +1,64 @@
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #526b31;
+  }
+  
+  .display {
+    width: 95%;
+    margin-bottom: 10px;
+    text-align: right;
+    background-color: #a1c277;
+    padding: 5px;
+    border-radius: 5px;
+    
+  }
+  
+  .expression {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .currentNumber {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 18px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  .zero {
+    grid-column: span 2; /* Span two columns for the zero button */
+  }
+  
+  .equals {
+    grid-column: span 2; /* Span two rows for the equals button */
+    background-color: #c9e294; /* Green background */
+    color: white; /* White text */
+  }
